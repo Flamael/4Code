@@ -93,7 +93,7 @@
     </ViewFlipper>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/criarConta"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -106,13 +106,14 @@
         android:text="Criar conta"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="criarConta"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/entrar"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button"
+        android:layout_alignBottom="@+id/criarConta"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginEnd="10dp"
@@ -121,5 +122,6 @@
         android:text="Entrar"
         android:textAlignment="center"
         android:textColor="@color/colorPrimaryDark"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="entrar"/>
 </RelativeLayout>
