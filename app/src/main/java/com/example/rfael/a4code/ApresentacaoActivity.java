@@ -1,29 +1,17 @@
 package com.example.rfael.a4code;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class SplashActivity extends ActionBarActivity implements Runnable {
-
+public class ApresentacaoActivity extends ActionBarActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.splash);
-
-        Handler handler = new Handler();
-        handler.postDelayed(this, 5500);
+        setContentView(R.layout.apresentacao);
 
     }
-
-    public void run() {
-        startActivity(new Intent(this, ApresentacaoActivity.class));
-        finish();
-    }
-
 }
