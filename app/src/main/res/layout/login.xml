@@ -9,11 +9,9 @@
         android:id="@+id/btVoltar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/textView5"
         android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="19dp"
         android:background="@android:color/transparent"
         android:onClick="voltar"
         app:srcCompat="?attr/actionModeCloseDrawable" />
@@ -22,52 +20,49 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginLeft="54dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="17dp"
         android:text="Login"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textSize="22sp" />
 
     <EditText
         android:id="@+id/ctEmail"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_alignLeft="@+id/ctSenha"
-        android:layout_alignStart="@+id/ctSenha"
-        android:layout_below="@+id/ctSenha"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
         android:background="@android:color/background_light"
         android:ems="50"
-        android:hint="  Digite uma senha"
+        android:fontFamily="sans-serif"
+        android:hint="Digite seu email"
         android:inputType="textPersonName"
         android:textColor="@color/colorPrimaryDark"
-        android:textColorHighlight="@color/colorPrimaryDark"
         android:textSize="22sp" />
 
     <EditText
         android:id="@+id/ctSenha"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/textView5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_alignLeft="@+id/ctEmail"
+        android:layout_alignStart="@+id/ctEmail"
+        android:layout_below="@+id/ctEmail"
+        android:layout_marginTop="30dp"
         android:background="@android:color/background_light"
         android:ems="50"
-        android:hint="  Informe o email"
-        android:inputType="textPersonName"
+        android:fontFamily="sans-serif"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword|textPersonName"
         android:textColor="@color/colorPrimaryDark"
-        android:textColorHighlight="@color/colorPrimaryDark"
         android:textSize="22sp" />
 
     <Button
         android:id="@+id/btLogar"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/ctEmail"
+        android:layout_below="@+id/ctSenha"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="@color/colorPrimary"
@@ -84,31 +79,31 @@
         android:layout_marginBottom="36dp"
         android:text="Esqueci minha senha"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:onClick="redefinirSenha"/>
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btFace"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="15dp"
         android:text="Login Opicional:"
         android:textColor="@android:color/background_light"
-        android:textSize="22sp" />
+        android:textSize="22sp"
+        android:layout_above="@+id/btFace"
+        android:layout_alignLeft="@+id/btLogar"
+        android:layout_alignStart="@+id/btLogar" />
 
     <ImageButton
         android:id="@+id/btFace"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_marginBottom="19dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@mipmap/face" />
+        app:srcCompat="@mipmap/face"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
 
     <ImageButton
         android:id="@+id/btGoogle"
