@@ -3,19 +3,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/usuario"
             android:icon="@drawable/user"
             android:title="Alterar usuário" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/configuracao"
             android:icon="@drawable/ic_menu_manage"
             android:title="Configuração" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/compartilhar"
             android:icon="@drawable/ic_menu_share"
             android:title="Compartilhar" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/logout"
             android:icon="@drawable/logout"
             android:title="Sair" />
     </group>
