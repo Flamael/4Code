@@ -28,7 +28,7 @@ public class ApresentacaoActivity extends ActionBarActivity {
         startActivity(new Intent(this, CadastroActivity.class));
     }
 
-    public void entrar (View view) {
+    public void entrar(View view) {
         startActivity(new Intent(this, LoginActivity.class));
     }
 

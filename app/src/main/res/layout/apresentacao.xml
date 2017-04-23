@@ -10,11 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
         android:text="4CODE"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
-        android:textSize="52sp"
-        android:fontFamily="sans-serif"/>
+        android:textSize="52sp" />
 
     <ViewFlipper
         android:id="@+id/flipper2"
@@ -63,33 +63,33 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginTop="300dp"
+            android:fontFamily="sans-serif"
             android:text="Várias linguagens, um aplicativo!"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"
-            android:textSize="26sp"
-            android:fontFamily="sans-serif"/>
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginTop="300dp"
+            android:fontFamily="sans-serif"
             android:text="Aprenda de forma dinâmica e prática!"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"
-            android:textSize="26sp"
-            android:fontFamily="sans-serif"/>
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginTop="300dp"
+            android:fontFamily="sans-serif"
             android:text="Lidere o Rank de melhor pontuação!"
             android:textAlignment="center"
             android:textColor="@android:color/background_light"
-            android:textSize="26sp"
-            android:fontFamily="sans-serif"/>
+            android:textSize="26sp" />
     </ViewFlipper>
 
     <Button
@@ -103,11 +103,11 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:background="@color/colorPrimary"
+        android:onClick="criarConta"
         android:text="Criar conta"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:onClick="criarConta"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/entrar"
@@ -119,9 +119,9 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:background="@color/colorPrimary"
+        android:onClick="entrar"
         android:text="Entrar"
         android:textAlignment="center"
         android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:onClick="entrar"/>
+        android:textStyle="bold" />
 </RelativeLayout>
