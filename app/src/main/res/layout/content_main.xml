@@ -38,7 +38,7 @@
         android:layout_alignParentStart="true"
         android:background="@android:color/holo_orange_dark"
         android:contentDescription=""
-        app:srcCompat="@mipmap/mysql"
+        app:srcCompat="@mipmap/javascript"
         tools:ignore="ContentDescription" />
 
     <ImageButton
